@@ -32,18 +32,21 @@
   "renovate-config": {
     "default": {
       "description": "System76 configuration for Renovate Bot",
+      "automerge": true,
+      "bumpVersion": "major,minor",
+      "includeForks": true,
+      "rangeStrategy": "bump",
       "extends": [
         "config:base",
         "group:allNonMajor",
         ":semanticCommitTypeAll(chore)"
       ],
-      "meteor": {
-        "enabled": false
+      "major": {
+        "automerge": false
       },
       "php": {
         "enabled": false
       },
-      "rangeStrategy": "bump",
       "npm": {
         "commitMessageTopic": "{{prettyDepType}} {{depName}}"
       }
