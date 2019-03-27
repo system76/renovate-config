@@ -41,11 +41,14 @@
         ":semanticCommitTypeAll(chore)",
         ":labels(depedendencies)"
       ],
+      "npm": {
+        "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+      },
       "php": {
         "enabled": false
       },
-      "npm": {
-        "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+      "rust": {
+        "enabled": true
       }
     }
   },
