@@ -39,7 +39,7 @@
         "group:allNonMajor",
         "schedule:nonOfficeHours",
         ":semanticCommitTypeAll(chore)",
-        ":labels(depedendencies)"
+        ":labels(dependencies)"
       ],
       "npm": {
         "commitMessageTopic": "{{prettyDepType}} {{depName}}"
