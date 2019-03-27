@@ -32,18 +32,15 @@
   "renovate-config": {
     "default": {
       "description": "System76 configuration for Renovate Bot",
-      "automerge": true,
       "bumpVersion": "major,minor",
       "includeForks": true,
       "rangeStrategy": "bump",
       "extends": [
         "config:base",
         "group:allNonMajor",
-        ":semanticCommitTypeAll(chore)"
+        ":semanticCommitTypeAll(chore)",
+        ":labels(depedendencies)"
       ],
-      "major": {
-        "automerge": false
-      },
       "php": {
         "enabled": false
       },
