@@ -8,11 +8,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@system76/standard": "^1.0.0",
+    "@system76/standard": "^1.1.2",
     "commitizen": "^3.0.7",
     "cz-conventional-changelog": "^2.1.0",
-    "renovate": "^14.57.1",
-    "semantic-release": "^15.10.8"
+    "renovate": "^14.57.6",
+    "semantic-release": "^15.13.3"
   },
   "scripts": {
     "commit": "git-cz",
