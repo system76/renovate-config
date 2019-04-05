@@ -49,6 +49,9 @@
 	"packagePatterns": ["babel"],
         "groupName": "babel"	
       }, {
+        "packagePatterns": ["gulp"],
+	"groupName": "gulp"
+      }, {
         "packagePatterns": ["^@fortawesome/"],
 	"groupName": "font-awesome"
       }, {
