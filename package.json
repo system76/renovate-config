@@ -41,6 +41,21 @@
         ":semanticCommitTypeAll(chore)",
         ":labels(depedendencies)"
       ],
+      "packageRules": [{
+        "packagePatterns": ["vue"],
+	"groupName": "vue"
+      }, {
+	"packagePatterns": ["babel"],
+        "groupName": "babel"	
+      }, {
+        "packagePatterns": ["^@fortawesome/"],
+	"groupName": "font-awesome"
+      }, {
+        "packageNames": ["@system76/standard"],
+        "packagePatterns": ["^eslint", "^@system76/eslint"],
+        "groupName": "linting",
+        "automerge": true
+      }],
       "npm": {
         "commitMessageTopic": "{{prettyDepType}} {{depName}}"
       },
