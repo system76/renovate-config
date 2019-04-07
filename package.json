@@ -43,7 +43,7 @@
         ":labels(dependencies,lint)"
       ],
       "packageRules": [{
-        "packagePatterns": ["vue"],
+        "packagePatterns": ["nuxt", "vue", "vee"],
 	"groupName": "vue"
       }, {
 	"packagePatterns": ["babel"],
@@ -52,8 +52,12 @@
         "packagePatterns": ["gulp"],
 	"groupName": "gulp"
       }, {
-        "packagePatterns": ["^@fortawesome/"],
+        "packagePatterns": ["fortawesome", "fontawesome"],
 	"groupName": "font-awesome"
+      }, {
+        "packagePatterns": ["renovate"],
+	"groupName": "renovate",
+	"automerge": true
       }, {
         "packageNames": ["@system76/standard"],
         "packagePatterns": ["^eslint", "^@system76/eslint"],
