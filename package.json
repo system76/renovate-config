@@ -63,6 +63,10 @@
         "packagePatterns": ["^eslint", "^@system76/eslint"],
         "groupName": "linting",
         "automerge": true
+      }, {
+        "packageNames": ["commitizen", "cz-conventional-changelog", "semantic-release"],
+        "groupName": "release",
+        "automerge": true
       }],
       "npm": {
         "commitMessageTopic": "{{prettyDepType}} {{depName}}"
