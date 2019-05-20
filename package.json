@@ -55,7 +55,7 @@
         "packagePatterns": ["fortawesome", "fontawesome"],
       	"groupName": "font-awesome"
       }, {
-        "packagePatterns": ["renovate"],
+        "packageNames": ["renovate"],
       	"groupName": "renovate",
       	"automerge": true
       }, {
