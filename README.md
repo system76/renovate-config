@@ -28,6 +28,12 @@
 This is the System76 organization configuration for
 [Renovate Bot](https://renovatebot.com).
 
+## Basics
+
+- Only creates PRs during non work hours, but updates PRs at a regular interval
+- Groups any non major semver packages into a single PR
+- Labels all PRs with "dependencies" and "lint"
+
 ## Using
 
 Include a top level `renovate.json` file with the following content:
@@ -42,4 +48,6 @@ Include a top level `renovate.json` file with the following content:
 
 ## Deployment
 
-Simply push to master and travis will do all the work for you!
+This repository uses [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
+to determine version number and auto deploy. Simply push to master and travis
+will do all the work for you!
