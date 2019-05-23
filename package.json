@@ -42,6 +42,7 @@
         ":semanticCommitTypeAll(chore)",
         ":labels(dependencies,lint)"
       ],
+      "enabledManagers": ["cargo", "docker-compose", "docker", "npm", "travis"]
       "packageRules": [{
         "packagePatterns": ["gulp"],
         "groupName": "gulp"
@@ -70,12 +71,6 @@
       }],
       "npm": {
         "commitMessageTopic": "{{prettyDepType}} {{depName}}"
-      },
-      "php": {
-        "enabled": false
-      },
-      "rust": {
-        "enabled": true
       }
     }
   },
