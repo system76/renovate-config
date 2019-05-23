@@ -1,5 +1,43 @@
 {
+  "description": "System76 configuration for Renovate Bot",
+  "includeForks": true,
+  "rangeStrategy": "bump",
+  "timezone": "America/Denver",
   "extends": [
-    "@system76"
-  ]
+    "config:base",
+    "group:allNonMajor",
+    "schedule:nonOfficeHours",
+    ":semanticCommitTypeAll(chore)",
+    ":labels(dependencies,lint)"
+  ],
+  "enabledManagers": ["cargo", "docker-compose", "docker", "npm", "travis"],
+  "packageRules": [{
+    "packagePatterns": ["gulp"],
+    "groupName": "gulp"
+  }, {
+    "packagePatterns": ["babel", "typescript"],
+    "groupName": "transpiler"
+  }, {
+    "packagePatterns": ["nuxt", "vue", "vee"],
+    "groupName": "vue"
+  }, {
+    "packagePatterns": ["fortawesome", "fontawesome"],
+    "groupName": "font-awesome"
+  }, {
+    "packageNames": ["renovate"],
+    "groupName": "renovate",
+    "automerge": true
+  }, {
+    "packageNames": ["@system76/standard"],
+    "packagePatterns": ["^eslint", "^@system76/eslint"],
+    "groupName": "linting",
+    "automerge": true
+  }, {
+    "packageNames": ["commitizen", "cz-conventional-changelog", "semantic-release"],
+    "groupName": "release",
+    "automerge": true
+  }],
+  "npm": {
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+  }
 }
