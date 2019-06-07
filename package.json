@@ -43,6 +43,11 @@
         ":labels(dependencies,lint)"
       ],
       "enabledManagers": ["cargo", "docker-compose", "docker", "npm", "travis"],
+      "vulnerabilityAlerts": {
+        "groupName": null,
+        "schedule": [],
+        "labels": ["dependencies", "lint", "security"]
+      },
       "packageRules": [{
         "packagePatterns": ["gulp"],
         "groupName": "gulp"
