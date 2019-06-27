@@ -11,8 +11,8 @@
     "@system76/standard": "^1.1.2",
     "commitizen": "^3.1.1",
     "cz-conventional-changelog": "^2.1.0",
-    "renovate": "^18.17.3",
-    "semantic-release": "^15.13.17"
+    "renovate": "^18.19.0",
+    "semantic-release": "^15.13.18"
   },
   "scripts": {
     "commit": "git-cz",
