@@ -49,6 +49,10 @@
         "labels": ["dependencies", "lint", "security"]
       },
       "packageRules": [{
+        "packageNames": ["@system76/design", "@system76/pop-vue"],
+        "groupName": "internal",
+        "automerge": true
+      }, {
         "packagePatterns": ["gulp"],
         "groupName": "gulp"
       }, {
