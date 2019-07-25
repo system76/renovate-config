@@ -65,7 +65,6 @@
         "groupName": "renovate",
         "automerge": true
       }, {
-        "packageNames": ["@system76/standard"],
         "packagePatterns": ["^eslint", "^@system76/eslint"],
         "groupName": "linting",
         "automerge": true
