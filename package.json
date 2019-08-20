@@ -11,7 +11,7 @@
     "@system76/standard": "^1.1.2",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
-    "renovate": "^19.30.7",
+    "renovate": "^19.30.10",
     "semantic-release": "^15.13.21"
   },
   "scripts": {
