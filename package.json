@@ -10,8 +10,8 @@
   "devDependencies": {
     "@system76/standard": "^1.1.2",
     "commitizen": "^4.0.3",
-    "cz-conventional-changelog": "^3.0.2",
-    "renovate": "^19.89.5",
+    "cz-conventional-changelog": "^3.1.0",
+    "renovate": "^19.185.0",
     "semantic-release": "^15.14.0"
   },
   "scripts": {
